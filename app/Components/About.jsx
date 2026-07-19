@@ -1,6 +1,5 @@
 "use client";
 import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
 import { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform, useSpring } from "motion/react";
@@ -158,8 +157,6 @@ const About = () => {
           </div>
         </motion.div>
       </motion.div>
-
-      <Footer />
     </>
   );
 };

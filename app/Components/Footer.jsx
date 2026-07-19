@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
+
 const MotionImage = motion.create(Image);
 
 const Footer = () => {
@@ -107,10 +108,10 @@ const Footer = () => {
           {/* Nav links */}
           <div className="flex flex-col gap-4">
             <Link
-              href="/menu"
-              className="font-bayon text-xl text-[#E88B4B] underline underline-offset-4 w-fit"
+              href="/about"
+              className="font-bayon text-xl text-white hover:text-[#E88B4B] transition-colors"
             >
-              About
+              ABOUT
             </Link>
             <Link
               href="/menu"
@@ -118,6 +119,7 @@ const Footer = () => {
             >
               MENU
             </Link>
+          
           </div>
 
           {/* Contact + Address */}
@@ -148,7 +150,33 @@ const Footer = () => {
             </p>
           </div>
 
-        
+          {/* Social links */}
+          <div className="flex flex-col items-start md:items-end gap-4">
+            <a
+              href="#"
+              className="font-bayon text-2xl text-white hover:text-[#E88B4B] transition-colors"
+            >
+              INSTAGRAM
+            </a>
+            <a
+              href="#"
+              className="font-bayon text-2xl text-white hover:text-[#E88B4B] transition-colors"
+            >
+              FACEBOOK
+            </a>
+            <a
+              href="#"
+              className="font-bayon text-2xl text-white hover:text-[#E88B4B] transition-colors"
+            >
+              TWITTER
+            </a>
+            <a
+              href="#"
+              className="font-bayon text-2xl text-white hover:text-[#E88B4B] transition-colors"
+            >
+              PINTEREST
+            </a>
+          </div>
         </div>
 
         {/* Divider */}

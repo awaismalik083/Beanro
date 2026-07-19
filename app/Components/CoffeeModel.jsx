@@ -22,7 +22,7 @@ export default function CoffeeModel() {
   }, []);
 
   return (
-    <div className="w-[500px] h-[600px]">
+    <div className="w-[800px] h-[700px]">
       <Canvas
         key={canvasKey}
         camera={{ position: [0, 0, 5], fov: 45 }}

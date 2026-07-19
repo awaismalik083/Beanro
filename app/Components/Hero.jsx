@@ -33,7 +33,7 @@ const Hero = () => {
         <div className="relative lg:mt-10  m w-full flex justify-center items-center">
           <Image
             src={"/assets/coffee.png"}
-            className="relative w-[500px] mt-30 md:[1200px] z-0"
+            className="relative w-[500px] mt-30 md:[1500px] z-0"
             width={300}
             height={400}
             alt="coffeeSplash"
