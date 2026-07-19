@@ -4,6 +4,7 @@ import Footer from "../Components/Footer";
 import { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform, useSpring } from "motion/react";
+import { PiArrowBendRightUpDuotone } from "react-icons/pi";
 
 const MotionImage = motion.create(Image);
 
@@ -43,7 +44,7 @@ const card = [
   },
 ];
 
-const Page = () => {
+const About = () => {
   const containerRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -163,4 +164,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default About;

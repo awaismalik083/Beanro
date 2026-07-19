@@ -5,7 +5,6 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import { signatureBrews, coldbrew, Frappuccinos } from "../Data/data.js";
 import { FaArrowRight } from "react-icons/fa";
-import Page from "../about/page.jsx";
 import { FaStar } from "react-icons/fa";
 const CoffeeModel = dynamic(() => import("./CoffeeModel"), { ssr: false });
 
@@ -93,7 +92,6 @@ const Hero = () => {
         </div>
       </div>
 
-      <Page />
     </>
   );
 };
