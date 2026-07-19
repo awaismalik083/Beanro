@@ -3,6 +3,7 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const MotionImage = motion.create(Image);
 
@@ -105,43 +106,18 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6">
           {/* Nav links */}
           <div className="flex flex-col gap-4">
-            <a
-              href="/about"
-              className="font-bayon text-xl text-white hover:text-[#E88B4B] transition-colors"
+            <Link
+              href="/menu"
+              className="font-bayon text-xl text-[#E88B4B] underline underline-offset-4 w-fit"
             >
-              ABOUT
-            </a>
-            <a
-              href="/blog"
-              className="font-bayon text-xl text-white hover:text-[#E88B4B] transition-colors"
-            >
-              BLOG
-            </a>
-            <a
+              About
+            </Link>
+            <Link
               href="/menu"
               className="font-bayon text-xl text-[#E88B4B] underline underline-offset-4 w-fit"
             >
               MENU
-            </a>
-            <a
-              href="/location"
-              className="font-bayon text-xl text-white hover:text-[#E88B4B] transition-colors"
-            >
-              LOCATION
-            </a>
-
-            <a
-              href="/reservation"
-              className="font-bayon text-xl text-white hover:text-[#E88B4B] transition-colors"
-            >
-              RESERVATION2
-            </a>
-            <a
-              href="/404"
-              className="font-bayon text-xl text-white hover:text-[#E88B4B] transition-colors"
-            >
-              404
-            </a>
+            </Link>
           </div>
 
           {/* Contact + Address */}
@@ -172,33 +148,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Social links */}
-          <div className="flex flex-col items-start md:items-end gap-4">
-            <a
-              href="#"
-              className="font-bayon text-2xl text-white hover:text-[#E88B4B] transition-colors"
-            >
-              INSTAGRAM
-            </a>
-            <a
-              href="#"
-              className="font-bayon text-2xl text-white hover:text-[#E88B4B] transition-colors"
-            >
-              FACEBOOK
-            </a>
-            <a
-              href="#"
-              className="font-bayon text-2xl text-white hover:text-[#E88B4B] transition-colors"
-            >
-              TWITTER
-            </a>
-            <a
-              href="#"
-              className="font-bayon text-2xl text-white hover:text-[#E88B4B] transition-colors"
-            >
-              PINTEREST
-            </a>
-          </div>
+        
         </div>
 
         {/* Divider */}
